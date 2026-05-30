@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-display: Manrope, Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-manrope: Manrope, ui-sans-serif, system-ui, sans-serif;
+  --font-inter: Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+
+  /* Surfaces (light, blue-tinted neutrals) */
+  --color-canvas: #f9f9ff;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f2f3fd;
+  --color-surface-muted: #ecedf7;
+  --color-surface-sunken: #e6e8f2;
+  --color-surface-disabled: #e0e2ec;
+  --color-surface-frame: #0f172a;
+
+  /* Borders & dividers */
+  --color-border: #c1c6d6;
+  --color-border-soft: #e0e2ec;
+
+  /* Text */
+  --color-ink: #191c23;
+  --color-ink-secondary: #414754;
+  --color-ink-muted: #727785;
+  --color-ink-subtle: #94a3b8;
+  --color-ink-inverse: #ffffff;
+
+  /* Brand / primary blue scale */
+  --color-brand: #005bbf;
+  --color-brand-bright: #1a73e8;
+  --color-brand-logo: #1d4ed8;
+  --color-brand-active: #1e40af;
+  --color-brand-deep: #3d5481;
+  --color-brand-secondary: #475e8c;
+  --color-brand-soft: #b2c9fe;
+  --color-brand-softer: #d8e2ff;
+  --color-brand-tint: #dbeafe;
+  --color-brand-plus: #0088ff;
+
+  /* Bottom-nav / sidebar inactive (slate) */
+  --color-nav-inactive: #64748b;
+
+  /* Semantic — Danger */
+  --color-danger: #ba1a1a;
+  --color-danger-bright: #ff5252;
+  --color-danger-soft: #ffdad6;
+
+  /* Semantic — Success */
+  --color-success: #006d2c;
+  --color-success-dark: #005320;
+  --color-success-soft: #89fa9b;
+
+  /* Accent palette (color picker swatches) */
+  --color-accent-purple: #7c4dff;
+  --color-accent-orange: #ffab40;
+  --color-accent-teal: #00bfa5;
+}
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-inter);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  #root {
+    min-height: 100dvh;
+  }
+}

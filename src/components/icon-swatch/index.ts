@@ -1,0 +1,1 @@
+export { IconSwatch } from "./IconSwatch";
